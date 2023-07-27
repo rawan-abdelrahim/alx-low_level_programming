@@ -7,11 +7,11 @@
 */
 int main(void)
 {
-	char digit = '0';
+	char digit = 'a';
 
-	while (digit <= '9')
+	while (digit <= 'j')
 	{
-		putchar(digit);
+		putchar(digit - '1');
 		digit++;
 	}
 	putchar('\n');

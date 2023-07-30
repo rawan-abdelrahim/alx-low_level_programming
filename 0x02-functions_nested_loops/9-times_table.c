@@ -23,6 +23,6 @@ void times_table(void)
 				_putchar((ans / 10) + 48);
 			_putchar((ans % 10) + 48);
 		}
-		_putchar(' ');
+		_putchar('\n');
 	}
 }

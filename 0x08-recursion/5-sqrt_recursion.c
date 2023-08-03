@@ -11,9 +11,9 @@
 */
 int support_function(int num, int root)
 {
-	if (root * root == 0)
+	if (root * root == num)
 		return (root);
-	else if (root * root > 0)
+	else if (root * root > num)
 		return (-1);
 	else
 		return (support_function(num, root + 1));

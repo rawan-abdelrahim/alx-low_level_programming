@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
 	}
 	sum = 0;
 	num = atoi(argv[1]);
-	if (num == 0)
+	if (num <= 0)
 	{
-		printf("%d\n", num);
+		printf("%d\n", 0);
 		return (0);
 	}
 	if (num >= 25)

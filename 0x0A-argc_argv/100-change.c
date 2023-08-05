@@ -18,7 +18,11 @@ int main(int argc, char *argv[])
 	}
 	sum = 0;
 	num = atoi(argv[1]);
-	num = abs(num);
+	if (num == 0)
+	{
+		printf("%d\n", num);
+		return (0);
+	}
 	if (num >= 25)
 	{
 		sum += (num / 25);

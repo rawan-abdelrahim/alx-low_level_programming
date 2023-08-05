@@ -1,1 +1,1 @@
-the folder content is about argc and argv
+the repo content is about programming language c

@@ -1,0 +1,14 @@
+# include "main.h"
+
+/**
+ * main -Entry point
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char const *argv[])
+{
+	(void)argc;
+	printf("%s\n", argv[argc]);
+	return (0);
+}

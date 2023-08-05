@@ -11,13 +11,14 @@ int main(int argc, char *argv[])
 {
 	int sum, num;
 
-	if (argc != 2 || (argc == 2 && atoi(argv[1]) < 0))
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	sum = 0;
 	num = atoi(argv[1]);
+	num = abs(num);
 	if (num >= 25)
 	{
 		sum += (num / 25);

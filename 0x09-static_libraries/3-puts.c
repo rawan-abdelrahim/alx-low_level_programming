@@ -1,4 +1,4 @@
-# include "main.h"
+#include "main.h"
 
 /**
  * _puts -Entry point
@@ -9,5 +9,5 @@
 */
 void _puts(char *s)
 {
-	return;
+	puts(s);
 }

@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int sum, num;
 
-	if (argc != 2)
+	if (argc != 2 || (argc == 2 && atoi(argv[1]) < 0))
 	{
 		printf("Error\n");
 		return (1);

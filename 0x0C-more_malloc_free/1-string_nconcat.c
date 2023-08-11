@@ -19,7 +19,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	while (s2 && s2[len2])
 	{
-		len++;
+		len2++;
 	}
 
 	if (n < len2)

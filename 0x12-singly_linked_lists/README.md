@@ -1,7 +1,7 @@
 # 0x12. C - Singly linked lists
 
 ## Requirements
-##General
+## General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All your files should end with a new line
@@ -19,14 +19,15 @@ All your header files should be include guarded
 
 # Tasks
 ## 0. Print list
-Write a function that prints all the elements of a list_t list.
+'''
+-Write a function that prints all the elements of a list_t list.
 
 Prototype: size_t print_list(const list_t *h);
 Return: the number of nodes
 Format: see example
 If str is NULL, print [0] (nil)
 You are allowed to use printf
-
+'''
 ## 1. List length
 Write a function that returns the number of elements in a linked list_t list.
 

@@ -1,5 +1,3 @@
-100-reverse_listint.c
-
 #include "lists.h"
 
 /**

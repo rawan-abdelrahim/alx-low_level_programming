@@ -10,7 +10,7 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int sz = 0, i;
+	int sz = 0, i = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -23,8 +23,8 @@ char *_strdup(char *str)
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i < sz ; i++)
-		ptr[i] = str[i];
+	for (; i < sz; i++)
+                ptr[i] = str[i];
 
-		return (ptr);
+	return (ptr);
 }

@@ -29,11 +29,11 @@ int word_len(char *str)
 int count_word(char *s)
 {
 	int cnt = 0, i;
-	bool flag = 0;
+	int flag = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] = ' ')
+		if (s[i] == ' ')
 			flag = 0;
 		else if (!flag)
 		{
@@ -54,9 +54,6 @@ char **strtow(char *str)
 {
 	char **arr;
 	int i, j, words , letters, indx = 0;
-
-	if (str == NULL || str == "")
-		return (NULL);
 
 	words = count_word(str);
 
@@ -88,7 +85,7 @@ char **strtow(char *str)
 		}
 
 		for (j = 0; j < letters; j++)
-			arr[i][j] = str[index++];
+			arr[i][j] = str[indx++];
 
 		arr[i][j] = '\0';
 	}

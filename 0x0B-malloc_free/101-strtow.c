@@ -2,17 +2,17 @@
 #include "main.h"
 /**
  * word_len - Locates the index marking the end of the
- * 	      first word contained within a string.
+ * first word contained within a string.
  * @str: the string to be searched.
  *
  * Return: the index marking the end of the initial word pointed to by
- * 	   str.
+ * str.
  */
 int word_len(char *str)
 {
 	int indx = 0, len = 0;
-	
-	while(*(str + len) && *(str + len) != ' ')
+
+	while (*(str + len) && *(str + len) != ' ')
 	{
 		len++;
 		indx++;
@@ -53,7 +53,7 @@ int count_word(char *s)
 char **strtow(char *str)
 {
 	char **arr;
-	int i, j, words , letters, indx = 0;
+	int i, j, words, letters, indx = 0;
 
 	words = count_word(str);
 
@@ -72,7 +72,7 @@ char **strtow(char *str)
 
 		letters = word_len(str + indx);
 
-		arr[i] = malloc(sizeof(char *) * (letters + 1));
+		arr[i] = malloc(sizeof(char) * (letters + 1));
 
 		if (arr[i] == NULL)
 		{

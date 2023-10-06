@@ -6,7 +6,7 @@
  */
 char *leet(char *n)
 {
-	int i , j;
+	int i, j;
 	char arr1[] = {"AaEeOoTtLl"};
 	char arr2[] = {"4433007711"};
 

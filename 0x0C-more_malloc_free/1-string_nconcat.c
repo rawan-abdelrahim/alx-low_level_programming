@@ -12,7 +12,7 @@ int word_len(char *str)
 {
 	int indx = 0, len = 0;
 
-	while (str[indx] != '\0')
+	while (str && str[indx] != '\0')
 	{
 		len++;
 		indx++;

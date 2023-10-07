@@ -31,7 +31,7 @@ int word_len(char *str)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int sz1, sz2, i;
+	unsigned int sz1, sz2, i;
 	char *ptr;
 
 	sz1 = word_len(s1);
@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr[i] = s1[i];
 
 	for (i = sz1; i < sz1 + sz2; i++)
-                ptr[i] = s2[i];
+                ptr[i] = s2[i - sz1];
 
 	ptr[i] = '\0';
 

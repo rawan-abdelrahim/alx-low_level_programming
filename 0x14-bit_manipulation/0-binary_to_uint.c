@@ -1,4 +1,4 @@
-#include"man.h"
+#include"main.h"
 
 /**
  * binary_to_uint - a function converts a binary number to an unsigned int.

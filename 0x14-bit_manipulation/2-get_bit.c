@@ -14,5 +14,5 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	divisor = 1 << index;
 
-	return (n & divisor);
+	return (n & divisor ? 1 : 0);
 }

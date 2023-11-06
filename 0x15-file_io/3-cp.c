@@ -18,7 +18,7 @@ int main(int ac, char **av)
 		exit(97);
 	}
 	
-	fd_from = open(av[1], O_REONLY);
+	fd_from = open(av[1], O_RDONLY);
 
 	if (fd_from == -1)
 	{
